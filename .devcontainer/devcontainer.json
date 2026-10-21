@@ -1,0 +1,19 @@
+{
+  "name": "SceneGuard remote backend",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "hostRequirements": {
+    "cpus": 4,
+    "memory": "16gb",
+    "storage": "32gb"
+  },
+  "forwardPorts": [8000, 3000],
+  "portsAttributes": {
+    "8000": {"label": "SceneGuard authenticated API", "onAutoForward": "silent"},
+    "3000": {"label": "SceneGuard dashboard", "onAutoForward": "silent"}
+  },
+  "postCreateCommand": "python scripts/initialize_local.py",
+  "remoteUser": "vscode"
+}

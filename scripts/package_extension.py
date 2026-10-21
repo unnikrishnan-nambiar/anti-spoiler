@@ -9,10 +9,10 @@ with zipfile.ZipFile(out/'sceneguard-extension.zip','w',zipfile.ZIP_DEFLATED) as
     for p in sorted((root/'extension').rglob('*')):
         if usable(p):archive.write(p,p.relative_to(root))
 with zipfile.ZipFile(out/'sceneguard-source.zip','w',zipfile.ZIP_DEFLATED) as archive:
-    for folder in ('backend','frontend','scripts','deploy','docs','sample-data','extension','tests','.github'):
+    for folder in ('backend','frontend','scripts','deploy','docs','sample-data','extension','tests','.github','.devcontainer'):
         for p in sorted((root/folder).rglob('*')):
             if usable(p):archive.write(p,Path('sceneguard')/p.relative_to(root))
-    for name in ('README.md','INSTALL_MAC.md','.env.example','.gitignore','.dockerignore','compose.yaml','compose.laya.yaml','compose.extension.yaml','compose.macos.yaml','compose.dev.yaml','Start SceneGuard on Mac.command'):
+    for name in ('README.md','INSTALL_MAC.md','REMOTE_SETUP.md','.env.example','.gitignore','.dockerignore','compose.yaml','compose.laya.yaml','compose.extension.yaml','compose.macos.yaml','compose.dev.yaml','Start SceneGuard on Mac.command'):
         p=root/name
         if p.exists():archive.write(p,Path('sceneguard')/name)
     assert not any(Path(p).name=='.env' for p in archive.namelist())

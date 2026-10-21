@@ -2,6 +2,8 @@
 
 This package contains the Chrome extension, local matching backend and a Mac launcher. The launcher has been syntax-checked, its command construction and credential handling tested, and its Compose configuration validated on Linux. It has **not** been executed on a physical Mac. Intel and Apple Silicon are configured to use the validated Linux x86-64 dependencies; Apple Silicon uses Docker emulation and can be slower.
 
+If your Mac cannot run a compatible Docker version, use [the remote-backend setup](REMOTE_SETUP.md). It requires only Chrome and the extension on your Mac.
+
 ## 1. Install Docker Desktop
 
 Install the correct Docker Desktop version for your Mac from the [official Mac installation page](https://docs.docker.com/desktop/setup/install/mac-install/), open it and finish its setup. Docker Desktop must be running. No host Python installation or paid AI API key is needed; setup runs Python inside Docker.
