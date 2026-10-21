@@ -1,0 +1,4698 @@
+{
+  "scope": "Local Docker Compose deployment; synthetic authorized fixtures only",
+  "soak": {
+    "started_at": "2026-10-21T06:24:19.666615+00:00",
+    "ended_at": "2026-10-21T06:34:19.699603+00:00",
+    "duration_seconds": 600.03,
+    "passed": true,
+    "scope": "Synthetic fixture pipeline; no Instagram media was retrieved or tested",
+    "observations": [
+      {
+        "elapsed_seconds": 0.0,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 6,
+          "review_clips": 0,
+          "pending_media": 2,
+          "alerts": 6
+        },
+        "agents": [
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:06.979189+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:06.980158+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:06.981103+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.361391+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:07.683599+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 10.04,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 6,
+          "review_clips": 0,
+          "pending_media": 2,
+          "alerts": 6
+        },
+        "agents": [
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:20.302878+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:20.303709+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.361391+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:20.300849+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:20.301862+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 20.06,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 6,
+          "review_clips": 0,
+          "pending_media": 2,
+          "alerts": 6
+        },
+        "agents": [
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:20.302878+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:20.303709+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.361391+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:20.300849+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:20.301862+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 30.12,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 8,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 8
+        },
+        "agents": [
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:40.959839+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:41.495061+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:41.496249+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:41.497244+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:41.498303+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 40.14,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 8,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 8
+        },
+        "agents": [
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:40.959839+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:41.495061+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:41.496249+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:41.497244+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:41.498303+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 50.17,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 8,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 8
+        },
+        "agents": [
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:40.959839+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:41.495061+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:41.496249+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:41.497244+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:41.498303+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 60.2,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 8,
+          "review_clips": 0,
+          "pending_media": 1,
+          "alerts": 8
+        },
+        "agents": [
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:40.959839+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:41.495061+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:41.496249+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:41.497244+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:24:41.498303+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 70.24,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 9,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 9
+        },
+        "agents": [
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:40.959839+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.229094+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.230305+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.231489+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.232625+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 80.27,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 9,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 9
+        },
+        "agents": [
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:40.959839+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.229094+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.230305+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.231489+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.232625+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 90.32,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 9,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 9
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.229094+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.230305+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.231489+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.232625+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:25:40.942978+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 100.35,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 9,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 9
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.229094+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.230305+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.231489+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.232625+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:25:40.942978+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 110.37,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 9,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 9
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.229094+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.230305+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.231489+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.232625+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:25:40.942978+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 120.4,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 9,
+          "review_clips": 0,
+          "pending_media": 1,
+          "alerts": 9
+        },
+        "agents": [
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.231489+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:25:20.232625+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:25:40.942978+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "running",
+            "updated_at": "2026-10-21T06:26:20.048137+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "running",
+            "updated_at": "2026-10-21T06:26:20.049429+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 130.45,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 9,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 9
+        },
+        "agents": [
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:25:40.942978+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.325978+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.327095+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.328371+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.329241+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 140.48,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 9,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 9
+        },
+        "agents": [
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:25:40.942978+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.325978+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.327095+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.328371+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.329241+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 150.51,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 9,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 9
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.325978+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.327095+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.328371+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.329241+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:26:40.944985+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 160.54,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 9,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 9
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.325978+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.327095+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.328371+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.329241+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:26:40.944985+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 170.56,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 9,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 9
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.325978+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.327095+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.328371+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.329241+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:26:40.944985+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 180.59,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 9,
+          "review_clips": 0,
+          "pending_media": 1,
+          "alerts": 9
+        },
+        "agents": [
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.328371+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:26:20.329241+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:26:40.944985+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "running",
+            "updated_at": "2026-10-21T06:27:20.112893+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "running",
+            "updated_at": "2026-10-21T06:27:20.114793+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 190.65,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 10,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 10
+        },
+        "agents": [
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:26:40.944985+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:27:20.661801+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:27:20.663602+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:27:20.667183+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:27:20.669075+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 200.68,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 10,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 10
+        },
+        "agents": [
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:26:40.944985+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:27:20.661801+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:27:20.663602+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:27:20.667183+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:27:20.669075+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 210.71,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 10,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 10
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:27:20.661801+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:27:20.663602+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:27:20.667183+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:27:20.669075+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:27:40.941373+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 220.74,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 10,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 10
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:27:20.661801+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:27:20.663602+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:27:20.667183+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:27:20.669075+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:27:40.941373+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 230.78,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 10,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 10
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:27:20.661801+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:27:20.663602+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:27:20.667183+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:27:20.669075+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:27:40.941373+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 240.81,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 10,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 10
+        },
+        "agents": [
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:27:40.941373+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.237213+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.238138+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.239030+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.239950+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 250.84,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 10,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 10
+        },
+        "agents": [
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:27:40.941373+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.237213+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.238138+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.239030+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.239950+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 260.87,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 10,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 10
+        },
+        "agents": [
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:27:40.941373+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.237213+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.238138+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.239030+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.239950+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 270.91,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 10,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 10
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.237213+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.238138+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.239030+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.239950+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:28:40.942154+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 280.94,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 10,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 10
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.237213+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.238138+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.239030+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.239950+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:28:40.942154+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 290.97,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 10,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 10
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.237213+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.238138+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.239030+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:28:20.239950+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:28:40.942154+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 301.0,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 11,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 11
+        },
+        "agents": [
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:28:40.942154+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.299425+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.300525+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.301519+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.302494+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 311.03,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 11,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 11
+        },
+        "agents": [
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:28:40.942154+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.299425+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.300525+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.301519+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.302494+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 321.06,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 11,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 11
+        },
+        "agents": [
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:28:40.942154+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.299425+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.300525+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.301519+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.302494+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 331.09,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 11,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 11
+        },
+        "agents": [
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.299425+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.300525+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.301519+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.302494+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:29:40.945214+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 341.12,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 11,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 11
+        },
+        "agents": [
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.299425+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.300525+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.301519+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.302494+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:29:40.945214+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 351.15,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 11,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 11
+        },
+        "agents": [
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.299425+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.300525+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.301519+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:29:20.302494+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:29:40.945214+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 361.18,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 11,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 11
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.301162+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.303631+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.305107+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.306146+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:29:40.945214+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 371.21,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 11,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 11
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.301162+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.303631+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.305107+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.306146+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:29:40.945214+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 381.24,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 11,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 11
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.301162+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.303631+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.305107+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.306146+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:29:40.945214+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 391.27,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 11,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 11
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.301162+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.303631+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.305107+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.306146+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:30:40.941658+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 401.3,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 11,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 11
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.301162+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.303631+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.305107+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.306146+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:30:40.941658+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 411.33,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 11,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 11
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.301162+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.303631+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.305107+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:30:20.306146+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:30:40.941658+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 421.36,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 12,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 12
+        },
+        "agents": [
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:30:40.941658+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.186050+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.186905+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.187724+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.188568+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 431.38,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 12,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 12
+        },
+        "agents": [
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:30:40.941658+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.186050+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.186905+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.187724+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.188568+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 441.41,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 12,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 12
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.186050+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.186905+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.187724+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.188568+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:31:40.942406+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 451.44,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 12,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 12
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.186050+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.186905+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.187724+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.188568+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:31:40.942406+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 461.47,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 12,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 12
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.186050+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.186905+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.187724+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.188568+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:31:40.942406+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 471.5,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 12,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 12
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.186050+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.186905+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.187724+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:31:20.188568+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:31:40.942406+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 481.53,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 12,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 12
+        },
+        "agents": [
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:31:40.942406+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.377067+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.377933+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.378766+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.379634+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 491.56,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 12,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 12
+        },
+        "agents": [
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:31:40.942406+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.377067+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.377933+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.378766+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.379634+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 501.59,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 12,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 12
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.377067+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.377933+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.378766+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.379634+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:32:40.948039+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 511.61,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 12,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 12
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.377067+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.377933+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.378766+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.379634+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:32:40.948039+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 521.65,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 12,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 12
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.377067+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.377933+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.378766+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.379634+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:32:40.948039+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 531.68,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 12,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 12
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.377067+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.377933+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.378766+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:32:20.379634+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:32:40.948039+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 541.71,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 13,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 13
+        },
+        "agents": [
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:32:40.948039+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.293527+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.294756+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.295860+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.296772+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 551.75,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 13,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 13
+        },
+        "agents": [
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:32:40.948039+00:00",
+            "stale": false
+          },
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.293527+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.294756+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.295860+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.296772+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.900468+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:24:07.902496+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:24:07.903477+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:24:07.905834+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:20:36.261562+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 561.77,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 13,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 13
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.293527+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.294756+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.295860+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.296772+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:33:40.977821+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:33:40.991401+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:33:40.994740+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:33:40.996076+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:33:40.997309+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:33:41.000334+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 571.81,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 13,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 13
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.293527+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.294756+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.295860+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.296772+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:33:40.977821+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:33:40.991401+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:33:40.994740+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:33:40.996076+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:33:40.997309+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:33:41.000334+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 581.84,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 13,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 13
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.293527+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.294756+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.295860+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.296772+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:33:40.977821+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:33:40.991401+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:33:40.994740+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:33:40.996076+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:33:40.997309+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:33:41.000334+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 591.87,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 13,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 13
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.293527+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.294756+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.295860+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.296772+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:33:40.977821+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:33:40.991401+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:33:40.994740+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:33:40.996076+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:33:40.997309+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:33:41.000334+00:00",
+            "stale": false
+          }
+        ]
+      },
+      {
+        "elapsed_seconds": 600.0,
+        "healthy": true,
+        "errors": [],
+        "queue_depth": 0,
+        "overview": {
+          "active_movies": 3,
+          "detected_clips": 13,
+          "review_clips": 0,
+          "pending_media": 0,
+          "alerts": 13
+        },
+        "agents": [
+          {
+            "name": "video",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.293527+00:00",
+            "stale": false
+          },
+          {
+            "name": "audio",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.294756+00:00",
+            "stale": false
+          },
+          {
+            "name": "decision",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.295860+00:00",
+            "stale": false
+          },
+          {
+            "name": "alert",
+            "status": "idle",
+            "updated_at": "2026-10-21T06:33:20.296772+00:00",
+            "stale": false
+          },
+          {
+            "name": "scheduler",
+            "status": "running",
+            "updated_at": "2026-10-21T06:33:40.977821+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:youtube",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:33:40.991401+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:instagram",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:33:40.994740+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:facebook",
+            "status": "unsupported",
+            "updated_at": "2026-10-21T06:33:40.996076+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery:mock",
+            "status": "mock",
+            "updated_at": "2026-10-21T06:33:40.997309+00:00",
+            "stale": false
+          },
+          {
+            "name": "discovery",
+            "status": "running",
+            "updated_at": "2026-10-21T06:33:41.000334+00:00",
+            "stale": false
+          }
+        ]
+      }
+    ]
+  },
+  "exercise": {
+    "started_at": "2026-10-21T06:24:19.670911+00:00",
+    "ended_at": "2026-10-21T06:34:19.670995+00:00",
+    "duration_seconds": 600.0,
+    "passed": true,
+    "scope": "synthetic fixture uploads only; supplied Instagram/YouTube URLs not processed",
+    "jobs": [
+      {
+        "media_id": 28,
+        "fixture": "candidate",
+        "verdict": "excluded_promotional",
+        "score": 0.8553,
+        "scene_timestamp": 0.0,
+        "elapsed_seconds": 1.16
+      },
+      {
+        "media_id": 29,
+        "fixture": "unrelated",
+        "verdict": "confirmed",
+        "score": 1.0,
+        "scene_timestamp": 0.0,
+        "elapsed_seconds": 61.17
+      },
+      {
+        "media_id": 30,
+        "fixture": "candidate",
+        "verdict": "excluded_promotional",
+        "score": 0.8553,
+        "scene_timestamp": 0.0,
+        "elapsed_seconds": 121.28
+      },
+      {
+        "media_id": 31,
+        "fixture": "unrelated",
+        "verdict": "confirmed",
+        "score": 1.0,
+        "scene_timestamp": 0.0,
+        "elapsed_seconds": 181.2
+      },
+      {
+        "media_id": 32,
+        "fixture": "candidate",
+        "verdict": "excluded_promotional",
+        "score": 0.8553,
+        "scene_timestamp": 0.0,
+        "elapsed_seconds": 241.17
+      },
+      {
+        "media_id": 33,
+        "fixture": "unrelated",
+        "verdict": "confirmed",
+        "score": 1.0,
+        "scene_timestamp": 0.0,
+        "elapsed_seconds": 301.19
+      },
+      {
+        "media_id": 34,
+        "fixture": "candidate",
+        "verdict": "excluded_promotional",
+        "score": 0.8553,
+        "scene_timestamp": 0.0,
+        "elapsed_seconds": 361.2
+      },
+      {
+        "media_id": 35,
+        "fixture": "unrelated",
+        "verdict": "confirmed",
+        "score": 1.0,
+        "scene_timestamp": 0.0,
+        "elapsed_seconds": 421.16
+      },
+      {
+        "media_id": 36,
+        "fixture": "candidate",
+        "verdict": "excluded_promotional",
+        "score": 0.8553,
+        "scene_timestamp": 0.0,
+        "elapsed_seconds": 481.16
+      },
+      {
+        "media_id": 37,
+        "fixture": "unrelated",
+        "verdict": "confirmed",
+        "score": 1.0,
+        "scene_timestamp": 0.0,
+        "elapsed_seconds": 541.19
+      }
+    ],
+    "failures": []
+  },
+  "test_summary": {
+    "unit_media_passed": 25,
+    "integration_passed": 6,
+    "browser_e2e_passed": 2,
+    "integration_skipped_in_unit_command": 6
+  },
+  "dependency_audits": {
+    "python_core": "no known vulnerabilities found",
+    "frontend": "zero vulnerabilities",
+    "optional_ai": "not audited or exercised live"
+  },
+  "real_link_comparison": {
+    "source": "user-provided URLs",
+    "candidate": "https://www.instagram.com/reel/DcTxhjWiS11/",
+    "reference": "https://youtu.be/hIHUeuw2yj8",
+    "relationship": "user identified the YouTube URL as the original; not independently verified",
+    "status": "awaiting_authorized_media",
+    "detection": null,
+    "confidence": null,
+    "limitation": "No approved Instagram media connector, authorized local reel file, or reference file was provided. No link-based scene comparison was executed."
+  }
+}

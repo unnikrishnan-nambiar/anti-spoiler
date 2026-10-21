@@ -1,0 +1,8 @@
+FROM python:3.12-slim
+RUN --mount=type=secret,id=platform_ca if [ -f /run/secrets/platform_ca ]; then cp /run/secrets/platform_ca /usr/local/share/ca-certificates/environment-proxy.crt; update-ca-certificates; fi
+WORKDIR /app
+COPY requirements-laya.txt .
+RUN PIP_CERT=/etc/ssl/certs/ca-certificates.crt pip install --no-cache-dir 'torch==2.14.1+cpu' --index-url https://download.pytorch.org/whl/cpu && PIP_CERT=/etc/ssl/certs/ca-certificates.crt pip install --no-cache-dir -r requirements-laya.txt 'fastapi==0.156.4' 'uvicorn==0.34.2' 'httpx==0.28.1' && useradd --uid 10001 --create-home appuser
+COPY --chown=appuser:appuser app app
+USER appuser
+CMD ["uvicorn","app.laya_service:app","--host","0.0.0.0","--port","8001","--no-access-log","--limit-concurrency","8"]

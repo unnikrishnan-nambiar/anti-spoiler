@@ -1,0 +1,140 @@
+{
+  "scope": "Controlled local derivative frames; NOT Instagram feed captures",
+  "cases": [
+    {
+      "known_offset": 30,
+      "reference_timestamp": 30.0,
+      "verdict": "review",
+      "similarity": 0.9141,
+      "wall_seconds": 3.142,
+      "laya": {
+        "model": "convaiinnovations/laya",
+        "revision": "7b928d828b7b0e022f929d9bd2e44165aa270148",
+        "choice": "no_match",
+        "scope": "structured_evidence_only",
+        "domain_calibration": "not calibrated for movie-scene verification",
+        "model_confidence": 0.4353,
+        "confidence_semantics": "SDK answer confidence; not calibrated for movie-scene verification",
+        "usage": {
+          "input_tokens": 111,
+          "output_tokens": 0,
+          "state_tokens": 47,
+          "state_tokens_dropped": 0,
+          "truncated": false
+        },
+        "status": "used",
+        "elapsed_seconds": 1.96,
+        "evidence_bytes": 195
+      }
+    },
+    {
+      "known_offset": 60,
+      "reference_timestamp": 60.0,
+      "verdict": "review",
+      "similarity": 0.811,
+      "wall_seconds": 1.428,
+      "laya": {
+        "model": "convaiinnovations/laya",
+        "revision": "7b928d828b7b0e022f929d9bd2e44165aa270148",
+        "choice": "no_match",
+        "scope": "structured_evidence_only",
+        "domain_calibration": "not calibrated for movie-scene verification",
+        "model_confidence": 0.459,
+        "confidence_semantics": "SDK answer confidence; not calibrated for movie-scene verification",
+        "usage": {
+          "input_tokens": 111,
+          "output_tokens": 0,
+          "state_tokens": 47,
+          "state_tokens_dropped": 0,
+          "truncated": false
+        },
+        "status": "used",
+        "elapsed_seconds": 0.883,
+        "evidence_bytes": 194
+      }
+    },
+    {
+      "known_offset": 90,
+      "reference_timestamp": 90.0,
+      "verdict": "review",
+      "similarity": 0.7804,
+      "wall_seconds": 1.442,
+      "laya": {
+        "model": "convaiinnovations/laya",
+        "revision": "7b928d828b7b0e022f929d9bd2e44165aa270148",
+        "choice": "no_match",
+        "scope": "structured_evidence_only",
+        "domain_calibration": "not calibrated for movie-scene verification",
+        "model_confidence": 0.4617,
+        "confidence_semantics": "SDK answer confidence; not calibrated for movie-scene verification",
+        "usage": {
+          "input_tokens": 111,
+          "output_tokens": 0,
+          "state_tokens": 47,
+          "state_tokens_dropped": 0,
+          "truncated": false
+        },
+        "status": "used",
+        "elapsed_seconds": 0.948,
+        "evidence_bytes": 195
+      }
+    },
+    {
+      "known_offset": 150,
+      "reference_timestamp": 150.0,
+      "verdict": "review",
+      "similarity": 0.877,
+      "wall_seconds": 1.492,
+      "laya": {
+        "model": "convaiinnovations/laya",
+        "revision": "7b928d828b7b0e022f929d9bd2e44165aa270148",
+        "choice": "no_match",
+        "scope": "structured_evidence_only",
+        "domain_calibration": "not calibrated for movie-scene verification",
+        "model_confidence": 0.5444,
+        "confidence_semantics": "SDK answer confidence; not calibrated for movie-scene verification",
+        "usage": {
+          "input_tokens": 110,
+          "output_tokens": 0,
+          "state_tokens": 46,
+          "state_tokens_dropped": 0,
+          "truncated": false
+        },
+        "status": "used",
+        "elapsed_seconds": 0.915,
+        "evidence_bytes": 195
+      }
+    }
+  ],
+  "backend_tests": {
+    "passed": 41,
+    "integration_skipped": 7
+  },
+  "ui_test": {
+    "scope": "UI with mocked Chrome bridge and API",
+    "passed": true,
+    "duration_ms": 60039,
+    "captures": 43,
+    "checks": 20
+  },
+  "feed_dom_tests": {
+    "passed": true,
+    "cases": 4,
+    "scope": "DOM fixtures, no Instagram access"
+  },
+  "capture_bridge_tests": {
+    "passed": true,
+    "cases": 4,
+    "scope": "Mock Chrome capture authorization and tab-switch race tests"
+  },
+  "controlled_demo": {
+    "scope": "Controlled demo: simulated feed/Chrome bridge, actual uploads, API, matching and Laya",
+    "reference_ids": [
+      91,
+      90
+    ],
+    "reels": 2,
+    "matched_reels": 0,
+    "review_reels": 2
+  }
+}

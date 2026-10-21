@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "SceneGuard Feed Check",
+  "version": "0.1.0",
+  "description": "A timed visual check of playing Instagram reels against authorized reference footage, with private Laya review.",
+  "permissions": ["activeTab", "scripting", "sidePanel", "storage"],
+  "host_permissions": ["http://localhost:8000/*", "http://127.0.0.1:8000/*"],
+  "optional_host_permissions": ["https://*/*"],
+  "background": {"service_worker": "background.js"},
+  "action": {"default_title": "Open SceneGuard"},
+  "side_panel": {"default_path": "panel.html"},
+  "minimum_chrome_version": "116"
+}

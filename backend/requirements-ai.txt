@@ -1,0 +1,5 @@
+# Optional; model weights require Hugging Face access. Not used in the default build.
+transformers==4.51.3
+torch==2.7.0
+Pillow==11.2.1
+safetensors==0.5.3

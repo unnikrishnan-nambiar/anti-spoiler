@@ -1,0 +1,31 @@
+name: SceneGuard validation
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: pip install -r backend/requirements.txt
+      - run: PYTHONPATH=backend pytest backend/tests -q
+      - run: npm ci && npm run build && npm audit --audit-level=high
+        working-directory: frontend
+      - run: python scripts/bootstrap.py && docker compose up --build --wait -d
+      - run: docker compose exec -T -e RUN_INTEGRATION=1 api python -m pytest tests/test_integration.py -q -p no:cacheprovider --basetemp=/tmp/integration-ci
+      - run: npx playwright install --with-deps chromium && npm run test:e2e
+        working-directory: frontend
+      - if: failure()
+        run: docker compose logs --tail 100
+      - if: always()
+        run: docker compose down

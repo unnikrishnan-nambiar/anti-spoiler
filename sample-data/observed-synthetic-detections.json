@@ -1,0 +1,193 @@
+{
+  "synthetic": true,
+  "provenance": "Measured results from the local FFmpeg/OpenCV/Celery integration run. Not real social-platform detections.",
+  "score_type": "uncalibrated_evidence_similarity",
+  "detections": [
+    {
+      "movie": "SYNTHETIC integration 66aa96ab",
+      "platform": "mock",
+      "post_url": "https://example.invalid/soak-47de6ff8ec82474d99493ce449a9bfde",
+      "scene_timestamp": 0.0,
+      "detected_at": "2026-10-21T06:26:20.323880+00:00",
+      "confidence": 0.8553,
+      "verdict": "excluded_promotional",
+      "severity": "none",
+      "evidence": {
+        "video": {
+          "score": 0.7933,
+          "timestamp": 0,
+          "matched_frames": 5,
+          "frames": [
+            {
+              "candidate_t": 0.0,
+              "reference_t": 0.0,
+              "score": 0.8794642857142857,
+              "phash_similarity": 0.9048,
+              "geometric_similarity": 0.875,
+              "inliers": 28
+            },
+            {
+              "candidate_t": 2.0,
+              "reference_t": 2.0,
+              "score": 0.78003663003663,
+              "phash_similarity": 0.8413,
+              "geometric_similarity": 0.7692,
+              "inliers": 30
+            },
+            {
+              "candidate_t": 4.0,
+              "reference_t": 4.0,
+              "score": 0.7525062656641603,
+              "phash_similarity": 0.8413,
+              "geometric_similarity": 0.7368,
+              "inliers": 28
+            },
+            {
+              "candidate_t": 6.0,
+              "reference_t": 6.0,
+              "score": 0.6794857142857142,
+              "phash_similarity": 0.873,
+              "geometric_similarity": 0.6453,
+              "inliers": 22
+            },
+            {
+              "candidate_t": 8.0,
+              "reference_t": 8.0,
+              "score": 0.8748447204968943,
+              "phash_similarity": 0.9048,
+              "geometric_similarity": 0.8696,
+              "inliers": 40
+            }
+          ]
+        },
+        "audio": {
+          "score": 0.477,
+          "timestamp": 0,
+          "aligned_landmarks": 238,
+          "distinct_landmarks": 239
+        },
+        "reference_media_id": 25,
+        "promotional": true,
+        "candidate_sha256": "761c64e08d0213162ae49efadb41fd6ccb422251bdf78ff7a5f410642cad1d59",
+        "source_kind": "mock",
+        "decision": {
+          "verdict": "excluded_promotional",
+          "confidence": 0.8553,
+          "severity": "none",
+          "engine": "deterministic",
+          "score_type": "uncalibrated_evidence_similarity"
+        }
+      }
+    },
+    {
+      "movie": "SYNTHETIC integration 66aa96ab",
+      "platform": "mock",
+      "post_url": "https://example.invalid/soak-f5465be8d4de47cabc4be9ab79f3021f",
+      "scene_timestamp": 0.0,
+      "detected_at": "2026-10-21T06:25:20.225271+00:00",
+      "confidence": 1.0,
+      "verdict": "confirmed",
+      "severity": "low",
+      "evidence": {
+        "video": {
+          "score": 1.0,
+          "timestamp": 0,
+          "matched_frames": 5,
+          "frames": [
+            {
+              "candidate_t": 0.0,
+              "reference_t": 0.0,
+              "score": 1.0,
+              "phash_similarity": 1.0,
+              "geometric_similarity": 1.0,
+              "inliers": 533
+            },
+            {
+              "candidate_t": 2.0,
+              "reference_t": 2.0,
+              "score": 1.0,
+              "phash_similarity": 1.0,
+              "geometric_similarity": 1.0,
+              "inliers": 548
+            },
+            {
+              "candidate_t": 4.0,
+              "reference_t": 4.0,
+              "score": 1.0,
+              "phash_similarity": 1.0,
+              "geometric_similarity": 1.0,
+              "inliers": 532
+            },
+            {
+              "candidate_t": 6.0,
+              "reference_t": 6.0,
+              "score": 1.0,
+              "phash_similarity": 1.0,
+              "geometric_similarity": 1.0,
+              "inliers": 562
+            },
+            {
+              "candidate_t": 8.0,
+              "reference_t": 8.0,
+              "score": 1.0,
+              "phash_similarity": 1.0,
+              "geometric_similarity": 1.0,
+              "inliers": 526
+            }
+          ]
+        },
+        "audio": {
+          "score": 1.0,
+          "timestamp": 0,
+          "aligned_landmarks": 249,
+          "distinct_landmarks": 196
+        },
+        "reference_media_id": 27,
+        "promotional": false,
+        "candidate_sha256": "55f5c86a7882ff0fcf210d64e38d5bd70192d35e01811b30012c23b521dd5592",
+        "source_kind": "mock",
+        "decision": {
+          "verdict": "confirmed",
+          "confidence": 1.0,
+          "severity": "low",
+          "engine": "deterministic",
+          "score_type": "uncalibrated_evidence_similarity"
+        }
+      }
+    },
+    {
+      "movie": null,
+      "platform": "mock",
+      "post_url": "https://example.invalid/db680c39002b4c0ba6f431b48cacf0f2",
+      "scene_timestamp": 0.0,
+      "detected_at": "2026-10-21T06:24:05.647149+00:00",
+      "confidence": 0.0,
+      "verdict": "no_match",
+      "severity": "unknown",
+      "evidence": {
+        "video": {
+          "score": 0.0,
+          "timestamp": 0.0,
+          "matched_frames": 0,
+          "frames": []
+        },
+        "audio": {
+          "score": 0.0,
+          "timestamp": 0.0,
+          "aligned_landmarks": 0
+        },
+        "reference_media_id": 22,
+        "promotional": false,
+        "candidate_sha256": "55f5c86a7882ff0fcf210d64e38d5bd70192d35e01811b30012c23b521dd5592",
+        "source_kind": "mock",
+        "decision": {
+          "verdict": "no_match",
+          "confidence": 0.0,
+          "severity": "unknown",
+          "engine": "deterministic",
+          "score_type": "uncalibrated_evidence_similarity"
+        }
+      }
+    }
+  ]
+}

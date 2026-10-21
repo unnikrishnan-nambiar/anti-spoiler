@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-21",
+  "scope": "Controlled user-reference derivatives, NOT Instagram captures",
+  "reference": {
+    "movie_id": 7,
+    "media_id": 38,
+    "feature_version": 3,
+    "audio_version": 3,
+    "frames": 121,
+    "audio_landmarks": 28324
+  },
+  "cases": [
+    {
+      "media_id": 79,
+      "verdict": "confirmed",
+      "matched_movie_id": 7,
+      "scene_timestamp": 30.0,
+      "video_score": 0.8274,
+      "matched_frames": 4,
+      "audio_score": 0.6558,
+      "audio_timestamp": 30.0,
+      "evidence_similarity": 0.8792,
+      "decision_engine": "deterministic+laya",
+      "laya": {
+        "model": "convaiinnovations/laya",
+        "revision": "7b928d828b7b0e022f929d9bd2e44165aa270148",
+        "choice": "confirmed",
+        "scope": "structured_evidence_only",
+        "domain_calibration": "not calibrated for movie-scene verification",
+        "model_confidence": 0.4931,
+        "confidence_semantics": "SDK answer confidence; not calibrated for movie-scene verification"
+      }
+    },
+    {
+      "media_id": 80,
+      "verdict": "confirmed",
+      "matched_movie_id": 7,
+      "scene_timestamp": 60.0,
+      "video_score": 0.8913,
+      "matched_frames": 4,
+      "audio_score": 0.186,
+      "audio_timestamp": 60.0,
+      "evidence_similarity": 0.8913,
+      "decision_engine": "deterministic+laya",
+      "laya": {
+        "model": "convaiinnovations/laya",
+        "revision": "7b928d828b7b0e022f929d9bd2e44165aa270148",
+        "choice": "confirmed",
+        "scope": "structured_evidence_only",
+        "domain_calibration": "not calibrated for movie-scene verification",
+        "model_confidence": 0.5123,
+        "confidence_semantics": "SDK answer confidence; not calibrated for movie-scene verification"
+      }
+    },
+    {
+      "media_id": 81,
+      "verdict": "confirmed",
+      "matched_movie_id": 7,
+      "scene_timestamp": 90.0,
+      "video_score": 0.9026,
+      "matched_frames": 4,
+      "audio_score": 0.4846,
+      "audio_timestamp": 90.0,
+      "evidence_similarity": 0.9318,
+      "decision_engine": "deterministic+laya",
+      "laya": {
+        "model": "convaiinnovations/laya",
+        "revision": "7b928d828b7b0e022f929d9bd2e44165aa270148",
+        "choice": "confirmed",
+        "scope": "structured_evidence_only",
+        "domain_calibration": "not calibrated for movie-scene verification",
+        "model_confidence": 0.3785,
+        "confidence_semantics": "SDK answer confidence; not calibrated for movie-scene verification"
+      }
+    },
+    {
+      "media_id": 78,
+      "verdict": "confirmed",
+      "matched_movie_id": 7,
+      "scene_timestamp": 150.0,
+      "video_score": 0.9243,
+      "matched_frames": 3,
+      "audio_score": 0.2789,
+      "audio_timestamp": 150.0,
+      "evidence_similarity": 0.947,
+      "decision_engine": "deterministic+laya",
+      "laya": {
+        "model": "convaiinnovations/laya",
+        "revision": "7b928d828b7b0e022f929d9bd2e44165aa270148",
+        "choice": "confirmed",
+        "scope": "structured_evidence_only",
+        "domain_calibration": "not calibrated for movie-scene verification",
+        "model_confidence": 0.4305,
+        "confidence_semantics": "SDK answer confidence; not calibrated for movie-scene verification"
+      }
+    }
+  ],
+  "negative": {
+    "media_id": 83,
+    "verdict": "no_match",
+    "movie_id": null,
+    "evidence_similarity": 0.0,
+    "laya": {
+      "model": "convaiinnovations/laya",
+      "revision": "7b928d828b7b0e022f929d9bd2e44165aa270148",
+      "choice": "no_match",
+      "scope": "structured_evidence_only",
+      "domain_calibration": "not calibrated for movie-scene verification",
+      "model_confidence": 0.7733,
+      "confidence_semantics": "SDK answer confidence; not calibrated for movie-scene verification"
+    }
+  },
+  "tests": {
+    "unit_media_service": 33,
+    "integration": 7,
+    "browser_e2e": 2
+  },
+  "instagram": {
+    "public_reel_pages_observed": 2,
+    "playable_candidate_videos_retrieved": 0,
+    "verified_content_matches": 0,
+    "absence_claim_supported": false
+  },
+  "monitoring": {
+    "duration_seconds": 600.1,
+    "observations": 61,
+    "healthy_observations": 61,
+    "failures": 0,
+    "final_queue_depth": 0,
+    "passed": true,
+    "scope": "Service health during local controlled-content tests; no Instagram media retrieved"
+  },
+  "earlier_monitoring_attempt": {
+    "duration_seconds": 600.09,
+    "passed": false,
+    "failed_observations": 1,
+    "reason": "Deliberate frontend recreation overlapped observation"
+  },
+  "final_dashboard": {
+    "external_http_status": 200,
+    "authenticated_index_details_verified": true,
+    "audio_landmarks_displayed": 28324,
+    "browser_e2e_passed_after_binding_fix": 2,
+    "frontend_health": "healthy",
+    "worker_ping": "pong"
+  }
+}

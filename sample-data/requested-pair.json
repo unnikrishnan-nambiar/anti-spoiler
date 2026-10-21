@@ -1,0 +1,10 @@
+{
+  "source": "user-provided URLs",
+  "candidate": "https://www.instagram.com/reel/DcTxhjWiS11/",
+  "reference": "https://youtu.be/hIHUeuw2yj8",
+  "relationship": "user identified the YouTube URL as the original; not independently verified",
+  "status": "awaiting_authorized_media",
+  "detection": null,
+  "confidence": null,
+  "limitation": "No approved Instagram media connector, authorized local reel file, or reference file was provided. No link-based scene comparison was executed."
+}

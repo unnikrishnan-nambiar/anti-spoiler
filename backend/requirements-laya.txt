@@ -1,0 +1,6 @@
+# First install CPU torch from https://download.pytorch.org/whl/cpu (TLS verification required).
+laya==0.4.12
+transformers==4.57.6
+huggingface_hub==0.36.2
+safetensors==0.8.0
+numpy==2.2.4

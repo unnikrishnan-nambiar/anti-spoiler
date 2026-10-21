@@ -1,0 +1,10 @@
+# Optional loopback-only access for local Python development and API integration tests.
+services:
+  db:
+    ports: ['127.0.0.1:5432:5432']
+  redis:
+    ports: ['127.0.0.1:6379:6379']
+  objectstore:
+    ports: ['127.0.0.1:9000:9000']
+  api:
+    ports: ['127.0.0.1:8000:8000']

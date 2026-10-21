@@ -1,0 +1,46 @@
+# Opt-in live, local Laya inference. Prepare verified weights with scripts/prepare_laya.py.
+services:
+  laya:
+    image: sceneguard-laya
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.laya
+    restart: unless-stopped
+    init: true
+    read_only: true
+    user: '10001:10001'
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    tmpfs: [/tmp]
+    environment:
+      LAYA_MODEL_PATH: /models/laya
+      LAYA_SERVICE_TOKEN: ${LAYA_SERVICE_TOKEN:?Generate a private service token first}
+      HF_HUB_OFFLINE: '1'
+      TRANSFORMERS_OFFLINE: '1'
+      USE_TF: '0'
+      NO_PROXY: localhost,127.0.0.1
+      no_proxy: localhost,127.0.0.1
+    volumes: [./.local/models/laya:/models/laya:ro]
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8001/health/ready')"]
+      interval: 15s
+      timeout: 10s
+      retries: 12
+      start_period: 60s
+    networks: [private]
+  api:
+    depends_on:
+      init: {condition: service_completed_successfully}
+      laya: {condition: service_healthy}
+    environment:
+      LAYA_ENABLED: 'true'
+      LAYA_SERVICE_URL: http://laya:8001
+      LAYA_SERVICE_TOKEN: ${LAYA_SERVICE_TOKEN}
+  worker:
+    environment:
+      LAYA_ENABLED: 'true'
+      LAYA_SERVICE_URL: http://laya:8001
+      LAYA_SERVICE_TOKEN: ${LAYA_SERVICE_TOKEN}
+    depends_on:
+      init: {condition: service_completed_successfully}
+      laya: {condition: service_healthy}

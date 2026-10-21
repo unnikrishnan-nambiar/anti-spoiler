@@ -1,0 +1,32 @@
+import {test,expect} from '@playwright/test';
+import fs from 'node:fs';
+import path from 'node:path';
+const envFile=path.resolve(__dirname,'../../.env');
+const local=fs.existsSync(envFile)?Object.fromEntries(fs.readFileSync(envFile,'utf8').split('\n').filter(l=>l.includes('=')&&!l.startsWith('#')).map(l=>[l.slice(0,l.indexOf('=')),l.slice(l.indexOf('=')+1)])):{};
+test('authentication, navigation, library creation, and settings',async({page})=>{
+ await page.goto('/');
+ await expect(page.getByRole('heading',{name:'Sign in to your workspace'})).toBeVisible();
+ await page.getByLabel('Username').fill(process.env.ADMIN_USERNAME||local.ADMIN_USERNAME||'admin');
+ await page.getByLabel('Password',{exact:true}).fill(process.env.ADMIN_PASSWORD||local.ADMIN_PASSWORD);
+ await page.getByRole('button',{name:'Sign in',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'Your scene intelligence, at a glance.'})).toBeVisible();
+ await page.getByRole('navigation').getByRole('button',{name:/Movies/}).click();
+ await page.getByLabel('Movie title').fill('SYNTHETIC browser test '+Date.now());
+ await page.getByRole('button',{name:'Create movie',exact:true}).click();
+ await expect(page.getByRole('status')).toContainText('Movie created');
+ await page.getByRole('navigation').getByRole('button',{name:/Detections/}).click();
+ await page.getByLabel('Search detections').fill('SYNTHETIC');
+ await expect(page.getByRole('heading',{name:'Scene decisions'})).toBeVisible();
+ await page.getByRole('navigation').getByRole('button',{name:/Agents/}).click();
+ await expect(page.getByRole('heading',{name:'discovery',exact:true})).toBeVisible();
+ await page.getByRole('navigation').getByRole('button',{name:/Settings/}).click();
+ await expect(page.getByRole('heading',{name:'Platform credentials'})).toBeVisible();
+ await page.getByRole('button',{name:'Save preferences'}).click();
+ await expect(page.getByRole('status')).toContainText('Saved');
+ await page.getByRole('button',{name:'Sign out'}).click();
+ await expect(page.getByRole('button',{name:'Sign in',exact:true})).toBeVisible();
+});
+test('CSRF origin and anonymous API are rejected',async({request})=>{
+ expect((await request.get('/api/movies')).status()).toBe(401);
+ expect((await request.post('/api/auth/login',{data:{username:'admin',password:'invalid'},headers:{Origin:'https://attacker.example.invalid'}})).status()).toBe(403);
+});

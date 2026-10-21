@@ -1,0 +1,20 @@
+# Install at your HTTPS ingress after supplying valid certificate paths.
+# Do not expose the Docker API, database, queue, or object store publicly.
+server {
+    listen 443 ssl;
+    server_name sceneguard.example.com;
+    ssl_certificate /etc/tls/fullchain.pem;
+    ssl_certificate_key /etc/tls/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    client_max_body_size 501m;
+    client_body_timeout 120s;
+    add_header Strict-Transport-Security "max-age=31536000" always;
+    location / {
+        proxy_pass http://127.0.0.1:3000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_request_buffering off;
+        proxy_read_timeout 300s;
+    }
+}

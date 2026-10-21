@@ -1,0 +1,126 @@
+name: sceneguard
+x-backend: &backend
+  build: ./backend
+  env_file: .env
+  restart: unless-stopped
+  init: true
+  read_only: true
+  tmpfs:
+    - /tmp:size=2g,mode=1777
+  security_opt:
+    - no-new-privileges:true
+  cap_drop: [ALL]
+  environment:
+    NO_PROXY: localhost,127.0.0.1,db,redis,objectstore,api,frontend
+    no_proxy: localhost,127.0.0.1,db,redis,objectstore,api,frontend
+    DATABASE_URL: postgresql+psycopg://sceneguard:${POSTGRES_PASSWORD}@db/sceneguard
+    REDIS_URL: redis://:${REDIS_PASSWORD}@redis:6379/0
+    S3_ENDPOINT: http://objectstore:9000
+  depends_on:
+    db: {condition: service_healthy}
+    redis: {condition: service_healthy}
+    objectstore: {condition: service_healthy}
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: sceneguard
+      POSTGRES_DB: sceneguard
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run scripts/bootstrap.py first}
+    volumes: [postgres:/var/lib/postgresql/data]
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U sceneguard -d sceneguard']
+      interval: 5s
+      timeout: 5s
+      retries: 30
+    networks: [private]
+  redis:
+    image: redis:7.4-alpine
+    restart: unless-stopped
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD}
+    command: [sh, -c, 'exec redis-server --appendonly yes --appendfsync everysec --requirepass "$$REDIS_PASSWORD" --maxmemory-policy noeviction']
+    volumes: [redis:/data]
+    healthcheck:
+      test: [CMD-SHELL, 'REDISCLI_AUTH="$$REDIS_PASSWORD" redis-cli ping | grep PONG']
+      interval: 5s
+      timeout: 5s
+      retries: 30
+    networks: [private]
+  objectstore:
+    image: chrislusf/seaweedfs:3.85
+    restart: unless-stopped
+    entrypoint: [/bin/sh, /etc/sceneguard/objectstore.sh]
+    environment:
+      NO_PROXY: localhost,127.0.0.1,objectstore
+      no_proxy: localhost,127.0.0.1,objectstore
+      S3_ACCESS_KEY: ${S3_ACCESS_KEY}
+      S3_SECRET_KEY: ${S3_SECRET_KEY}
+    volumes:
+      - objects:/data
+      - ./deploy/objectstore.sh:/etc/sceneguard/objectstore.sh:ro
+    healthcheck:
+      test: [CMD-SHELL, 'http_proxy= https_proxy= HTTP_PROXY= HTTPS_PROXY= ALL_PROXY= all_proxy= wget -q -O /dev/null http://127.0.0.1:9333/cluster/status']
+      interval: 5s
+      timeout: 5s
+      retries: 30
+    networks: [private]
+  init:
+    <<: *backend
+    command: python -m app.init_db
+    restart: 'no'
+    networks: [private]
+  api:
+    <<: *backend
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --no-access-log
+    depends_on:
+      init: {condition: service_completed_successfully}
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://localhost:8000/health/ready')"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+    networks: [private, egress]
+  worker:
+    <<: *backend
+    command: celery -A app.queue.celery worker --loglevel=WARNING --concurrency=2
+    depends_on:
+      init: {condition: service_completed_successfully}
+    networks: [private, egress]
+  beat:
+    <<: *backend
+    command: celery -A app.queue.celery beat --loglevel=WARNING --schedule=/tmp/celerybeat-schedule
+    depends_on:
+      init: {condition: service_completed_successfully}
+    networks: [private, egress]
+  frontend:
+    build: ./frontend
+    restart: unless-stopped
+    init: true
+    read_only: true
+    tmpfs: [/tmp]
+    environment:
+      HOSTNAME: 0.0.0.0
+      NO_PROXY: localhost,127.0.0.1,api
+      no_proxy: localhost,127.0.0.1,api
+      BACKEND_URL: http://api:8000
+      APP_ORIGIN: ${APP_ORIGIN:-http://localhost:3000}
+      SECURE_COOKIE: ${SECURE_COOKIE:-false}
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:3000/').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+    ports: ['127.0.0.1:3000:3000']
+    depends_on:
+      api: {condition: service_healthy}
+    networks: [private, egress]
+volumes:
+  postgres:
+  redis:
+  objects:
+networks:
+  private:
+    internal: true
+  egress:
