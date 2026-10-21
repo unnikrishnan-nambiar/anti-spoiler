@@ -6,6 +6,12 @@ This package contains the Chrome extension, local matching backend and a Mac lau
 
 Install the correct Docker Desktop version for your Mac from the [official Mac installation page](https://docs.docker.com/desktop/setup/install/mac-install/), open it and finish its setup. Docker Desktop must be running. No host Python installation or paid AI API key is needed; setup runs Python inside Docker.
 
+### macOS 12 Monterey compatibility
+
+Current Docker Desktop requires a newer OS and will not start on macOS 12.7.6. Docker's [official release notes](https://docs.docker.com/desktop/release-notes/#4420) document that 4.42 raised the minimum to macOS 13.3; 4.41.2 is the preceding release. Version 4.41.2 is now old and unsupported, so use it only as a temporary compatibility option and prefer upgrading macOS if your Mac supports it. Use the [4.41.2 release entry](https://docs.docker.com/desktop/release-notes/#4412) for the matching Intel or Apple Silicon download. An installed Docker app can be replaced by a compatible version without deleting its data; do not delete Docker volumes or use factory reset to solve this OS-version error.
+
+The launcher now detects macOS 12 and an installed Docker app whose declared OS minimum is too new, and stops with compatibility instructions instead of repeatedly attempting to launch it.
+
 ## 2. Run the local installer
 
 Extract `sceneguard-macos.zip` in Downloads. Open Terminal and run:
