@@ -2,7 +2,14 @@
 # Local Docker setup. Downloads the verified Laya model on first use.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-command -v docker >/dev/null || { printf '%s\n' 'Install and start Docker Desktop first.'; exit 1; }
+if ! command -v docker >/dev/null; then
+  if [ -n "${CODESPACE_NAME:-}" ];then
+    printf '%s\n' 'Docker is missing in this Codespace. Run Codespaces: Rebuild Container to apply .devcontainer/devcontainer.json; Docker Desktop is not needed on your Mac.'
+  else
+    printf '%s\n' 'Install a compatible Docker runtime on this machine, or use REMOTE_SETUP.md to run the backend in Codespaces.'
+  fi
+  exit 1
+fi
 docker compose version >/dev/null
 docker info >/dev/null
 compose=(docker compose -f compose.yaml -f compose.laya.yaml -f compose.extension.yaml)

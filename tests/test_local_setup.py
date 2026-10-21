@@ -34,4 +34,17 @@ class LocalSetupTests(unittest.TestCase):
             self.assertTrue(any('run --rm --platform linux/amd64' in x and 'prepare_laya.py' in x for x in lines))
             self.assertTrue(any('-f compose.macos.yaml up --no-build -d' in x for x in lines))
 
+class CodespacesSetupTests(unittest.TestCase):
+    def test_missing_docker_reports_remote_rebuild_before_creating_env(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder);(root/'scripts').mkdir();binary=root/'bin';binary.mkdir()
+            shutil.copyfile(ROOT/'scripts/start_codespaces.sh',root/'scripts/start_codespaces.sh')
+            (binary/'dirname').symlink_to(shutil.which('dirname'))
+            env={**os.environ,'PATH':str(binary),'CODESPACE_NAME':'fixture-codespace'}
+            result=subprocess.run(['/bin/bash',str(root/'scripts/start_codespaces.sh')],env=env,text=True,capture_output=True)
+            self.assertNotEqual(result.returncode,0)
+            self.assertIn('Codespaces: Rebuild Container',result.stdout)
+            self.assertIn('do not install Docker Desktop',result.stdout)
+            self.assertFalse((root/'.env').exists())
+
 if __name__=='__main__':unittest.main()

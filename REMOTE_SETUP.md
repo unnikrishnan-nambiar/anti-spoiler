@@ -39,3 +39,21 @@ On resume, rerun `bash scripts/start_codespaces.sh`. Builds and model downloads 
 ## What has and has not been verified
 
 The existing cloud deployment and local-frame/Laya tests already passed as described in `docs/EXTENSION.md`. The Codespaces JSON, shell syntax, source packaging and existing installer safety tests were checked. A new Codespace has not been provisioned, and public HTTPS forwarding has not been exercised here. Your real Instagram capture still needs the final check in your own Chrome; this route does not establish comprehensive coverage or improve the unvalidated Laya decision quality.
+
+## If setup says Docker is missing
+
+That means Docker is absent from the terminal environment running the command; it is not a request to install Docker Desktop on your Mac. Open the **browser editor for your Codespace** and ensure it is using this branch's latest configuration:
+
+```bash
+git pull --ff-only origin sceneguard-macos-delivery
+```
+
+Press **Cmd+Shift+P** (on your Mac keyboard) and select **Codespaces: Rebuild Container**. Let the rebuild finish. This applies `.devcontainer/devcontainer.json`, including the Docker-in-Docker feature inside the remote Linux workspace. If asked to choose a configuration, select SceneGuard. Then, in the new browser Terminal:
+
+```bash
+docker --version
+docker compose version
+bash scripts/start_codespaces.sh
+```
+
+Existing `.env` and footage under the workspace are preserved by these project scripts. Rebuilds can replace container-level Docker state, so back up any existing named-volume data before rebuilding an already-used deployment. During this first failed setup there should not yet be service data to preserve. If Docker remains unavailable, open the Codespace's creation log to see the failed feature installation; do not install Docker Desktop on the unsupported Mac as a workaround.

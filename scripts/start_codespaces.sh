@@ -6,6 +6,18 @@ if [ -z "${CODESPACE_NAME:-}" ];then
   printf '%s\n' 'Run this script in a GitHub Codespaces terminal, not on your Mac.'
   exit 1
 fi
+if ! command -v docker >/dev/null 2>&1; then
+  printf '%s\n' 'Docker is missing from this Codespace; do not install Docker Desktop on your Mac.' 'In the browser editor press Cmd+Shift+P and run Codespaces: Rebuild Container.' 'Choose the SceneGuard configuration from .devcontainer/devcontainer.json, wait for the rebuild, then rerun this script.'
+  exit 1
+fi
+if ! docker compose version >/dev/null 2>&1; then
+  printf '%s\n' 'Docker Compose is missing. Rebuild this Codespace using the SceneGuard dev-container configuration.'
+  exit 1
+fi
+if ! docker info >/dev/null 2>&1; then
+  printf '%s\n' 'Docker exists but its Linux daemon is not ready in this Codespace.' 'Wait for container setup to finish. If it remains unavailable, run Codespaces: Rebuild Container and review the creation log.'
+  exit 1
+fi
 python3 scripts/initialize_local.py
 python3 - <<'PY'
 import os,re
