@@ -1,0 +1,24 @@
+[Unit]
+Description=SceneGuard native extension demo (Python and local Laya)
+After=network.target
+
+[Service]
+Type=simple
+User=sceneguard
+Group=sceneguard
+WorkingDirectory=/opt/sceneguard
+ExecStart=/opt/sceneguard/.venv/bin/python /opt/sceneguard/scripts/run_extension.py
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=40
+KillMode=mixed
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/sceneguard/.local
+Environment=PYTHONDONTWRITEBYTECODE=1
+
+[Install]
+WantedBy=multi-user.target

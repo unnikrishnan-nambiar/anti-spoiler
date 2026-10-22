@@ -1,4 +1,6 @@
-# Verified, deployed Laya integration
+# Laya integration
+
+For this session’s current native deployment status, see [NATIVE_DEMO_STATUS.md](NATIVE_DEMO_STATUS.md). The results below describe earlier prepared deployments and experiments; they do not establish that weights or inference are available on a fresh machine.
 
 The official model is [convaiinnovations/laya](https://huggingface.co/convaiinnovations/laya), Apache-2.0. Its documented interface is `laya.load(...).predict(state, questions)`. SceneGuard uses the `choice` interface on measured visual/audio evidence. Laya is a structured-text decision model; it does not retrieve Instagram footage, compare pixels or compute audio fingerprints.
 

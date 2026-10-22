@@ -1,0 +1,23 @@
+#cloud-config
+# Ubuntu 24.04 LTS x86_64; bootstrap only, no application or public API started.
+package_update: true
+packages:
+  - python3
+  - python3-venv
+  - ffmpeg
+  - nginx
+  - certbot
+  - python3-certbot-nginx
+  - unzip
+users:
+  - default
+  - name: sceneguard
+    system: true
+    homedir: /opt/sceneguard
+    no_create_home: true
+    shell: /usr/sbin/nologin
+    lock_passwd: true
+runcmd:
+  - [install, -d, -m, '0750', -o, sceneguard, -g, sceneguard, /opt/sceneguard]
+  - [install, -d, -m, '0700', -o, sceneguard, -g, sceneguard, /opt/sceneguard/.local]
+final_message: 'SceneGuard VM prerequisites installed. Transfer the prepared source bundle and follow deploy/LINUX_VM.md; application deployment is not automatic.'

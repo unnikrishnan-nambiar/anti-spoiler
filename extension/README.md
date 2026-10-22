@@ -18,17 +18,15 @@ Results show the post link, measured visual similarity, matching reference times
 
 ## Backend
 
-The extension requires the matching backend; installing the extension alone is insufficient. On the **same computer as Chrome**, from the prepared SceneGuard checkout:
+The native demo backend runs Python, FFmpeg, SQLite and local Laya directly. From a checkout with Python 3.11/3.12 and FFmpeg:
 
 ```bash
-docker compose -f compose.yaml -f compose.laya.yaml -f compose.extension.yaml up --no-build -d
+bash scripts/start_extension.sh
 ```
 
-Use `http://localhost:8000` as the API address. The API is bound to loopback. Sign in with the SceneGuard credentials in your protected `.env`. If you run the backend on a different machine, use its authenticated HTTPS API origin and allow that specific host when Chrome prompts. Your laptop's `localhost` does not point to this cloud workspace. This workspace does not currently provide a public HTTPS API URL.
+First startup runs `scripts/install_extension.sh` to install dependencies and prepare checksum-verified weights. The foreground supervisor starts a private Laya process and the extension API, waits for readiness, and stops both on Ctrl-C. Existing credentials are preserved in protected `.env`; references and state are stored under `.local/demo`. No Docker services or dashboard are needed for this mode.
 
-For a fresh Linux/WSL checkout with Docker Compose and Python 3, `bash scripts/start_extension.sh` builds the services and prepares verified weights. This fresh-install helper has been syntax-checked; the existing deployment was validated with its prepared images. Initial downloads/builds can take several minutes and are outside the scan timer.
-
-A fresh checkout needs built images and the pinned Laya weights: follow `docs/LAYA.md` in the full source bundle, then run the Compose command above with `--build` instead of `--no-build`. `python scripts/bootstrap.py` creates local credentials without printing them. Keep `.env` private.
+On the same machine as Chrome use API origin `http://localhost:8000`. On another machine use authenticated HTTPS hosting from [REMOTE_SETUP.md](../REMOTE_SETUP.md). Your laptop's localhost does not reach a cloud workspace. No public endpoint is currently provisioned by this source code. Use [INSTALL_MAC.md](../INSTALL_MAC.md) for Mac prerequisites and supported hardware.
 
 ## Laya and runtime limits
 
@@ -52,4 +50,4 @@ If Developer mode or extension installation is blocked by your browser administr
 
 ## MacBook setup
 
-Use the Mac source package and `bash "Start SceneGuard on Mac.command"` from its extracted root. See `INSTALL_MAC.md`. The launcher uses Docker Desktop and the validated Linux x86 stack on Intel/Apple Silicon; Apple Silicon uses emulation and may be slower. It does not require host Python. Mac hardware execution remains unverified.
+Run `bash "Start SceneGuard on Mac.command"` from the extracted source root. Pinned native dependencies require Apple Silicon with macOS 14+. Older/Intel Macs can use the native Linux backend remotely. Physical Mac execution and live Instagram capture remain unverified in this session.

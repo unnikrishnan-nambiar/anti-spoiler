@@ -2,6 +2,8 @@
 
 Detection-only movie-scene matching with five testable agents and a minimal black-and-white dashboard. Accepts authorized reference/candidate videos; combines geometric visual evidence and audio fingerprints; excludes approved promotional material; stores deduplicated in-app alerts. No reporting, takedown, authentication bypass, or public-video scraping.
 
+Current native extension work and deployment status: [native demo report](docs/NATIVE_DEMO_STATUS.md).
+
 See [measured validation results](docs/VALIDATION.md) and [architecture and phase status](docs/ARCHITECTURE.md) for working components, mocks, score semantics, credentials and production limitations.
 
 ## Start
@@ -111,4 +113,4 @@ Current repair results: real audio indexing is fixed and Laya is deployed. See [
 
 The [SceneGuard Feed Check extension](extension/README.md) uploads up to five authorized references and runs a user-started visual scan with a configurable 15–600-second duration of playing reels in the active Instagram tab. It sends cropped frames to the backend and compact numeric evidence to local Laya. Model usage, latency, skipped samples and matches are explicit. This is limited browser sampling; it does not enable whole-platform discovery. See [extension validation and limits](docs/EXTENSION.md).
 
-Prepared startup: `docker compose -f compose.yaml -f compose.laya.yaml -f compose.extension.yaml up --no-build -d`. Fresh Linux/WSL setup helper: `bash scripts/start_extension.sh`. Remote Chrome needs a reachable authenticated HTTPS API; its localhost is not this cloud workspace.
+Native extension demo startup: `bash scripts/start_extension.sh`. This installs Python dependencies and verified local Laya weights on first use, then runs the extension API directly with SQLite and local files; no Docker is required. See [native Mac requirements](INSTALL_MAC.md) and [Linux hosting](REMOTE_SETUP.md). The dashboard/queue Compose workflow above remains a separate full deployment. No public HTTPS host is provisioned by the native launcher.
